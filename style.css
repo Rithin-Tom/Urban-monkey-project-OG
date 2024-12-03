@@ -1,0 +1,529 @@
+body{
+    margin: 0;
+}
+
+.head{
+    width: 100%;
+    height: 75px;
+    background-color:rgb(255, 255, 255);
+    
+    
+}
+.main-h{
+    display:flex;
+    width: 100%;
+    height: 75px;
+   
+   
+}
+.phc{
+    display: flex;
+    padding-left: 485px;
+
+}
+
+
+.img-heart,.img-pro,.img-cart{
+    width: 50px;
+}
+.profile{
+    width:40px ;
+}
+.heart{
+    width:40px
+}
+.cart{
+    width: 40px;
+}
+.img-pro{
+    width: 31px;
+    position: relative;
+    left: 0px;
+    top: 23px;
+    cursor: pointer;
+    transition: width .2s;
+}
+.img-pro:hover{
+    width: 33px;
+}
+.img-heart{
+    position: relative;
+    left: 0px;
+    top: 22px;
+    width: 32px;
+    cursor: pointer;
+    transition: width .2s;
+}
+.img-heart:hover{
+    width:34px
+
+}
+
+
+
+.img-cart{
+    position: relative;
+    left: 0px;
+    top: 19px;
+    width: 39px;
+    cursor: pointer;
+    transition: width .2s;
+
+}
+.img-cart:hover{
+    width:41px
+}
+
+.sub-h{
+    width: 100%;
+    height:50px;
+    background-color: #e2e3e5;
+    
+}
+.sub-sub{
+    display:flex ;
+    justify-content: center;
+    padding-top: 15px;
+
+}
+.s1,.s2,.s3,.s6,.s7,.s8{
+    border: none;
+    padding-left: 35px;
+    background: none;
+    font-size: 14px;
+    cursor: pointer;
+    font-family:"Roboto Mono", sans;
+}
+.s4,.s9,.s5{
+    margin-top: 0px;
+    font-size: 14px;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: "Roboto Mono", sans;
+}
+.s1:hover{
+    opacity: 0.7;
+}
+.s2:hover{
+    opacity: 0.7;
+}
+.s3:hover{
+    opacity: 0.7;
+}
+.s4:hover{
+    opacity: 0.7;
+}
+.s5:hover{
+    opacity: 0.7;
+}
+.s6:hover{
+    opacity: 0.7;
+}
+.s7:hover{
+    opacity: 0.7;
+}
+.s8:hover{
+    opacity: 0.7;
+}
+.s9:hover{
+    opacity: 0.7;
+}
+
+.logo {
+    width: 320px;
+    padding-top: 25px;
+    padding-left: 165px;
+    height: 22px;
+    cursor: pointer;
+
+}
+.search-b{
+    margin: 20px;
+    border: 2.1px solid #e2e3e5;
+    width: 520px;
+    display: flex;
+    padding: 1.5px 1.5px;
+    margin: 15px -256px;
+    border-radius: 10px;
+    
+    
+}
+.CATEGORIES{
+    border: none;
+    height: 35px;
+    background:none ;
+    font-size: 14px;
+    margin-right:8px;
+    font-family:"Roboto Mono", sans;
+    padding-right: 60px;
+    
+   
+}
+.search-input{
+    border: none;
+    background: none;
+    margin: 1px;
+    font-size: 14px;
+    height: 35px;
+    font-family: "Roboto Mono", sans;
+    padding-left: 10px;
+    
+   
+}
+.search-button{
+    color: #ccc;
+    background-color: black;
+    font-size: 14px;
+    width: 125px;
+    font-weight: bold;
+    border: none;
+    padding: 6px 7px;
+    height: 39px;
+    border-radius: 9px;
+    cursor: pointer;
+   
+
+}
+.search-input:focus,.CATEGORIES:focus{
+    outline: none;
+}
+.line{
+    background-color: gray;
+    width: 1.5px;
+    height: 18px;
+    margin-top: 9px;
+    
+}
+
+
+.left-header{
+    width: 50%;
+}
+.page-1,.first-page{
+    width: 1519px;;
+}
+.rawsize{
+    display: flex;
+    
+}
+.svg,.watch,.acc{
+    width:123px ;
+}
+.d1,.d2,.d3,.d5,.d6,.d7,.d8,.d9,.d10,.d11,.d13,.d14,.d15{
+    width: 57px;
+    padding-top: 25px;
+    padding-left: 12px;
+    cursor: pointer;
+
+}
+.d4,.d12,.d16{
+    width: 57px;
+    padding-top: 25px;
+    cursor: pointer;
+}
+.d16{
+    padding-left: 7px;
+}
+.d4{
+    padding-left: 8px;
+}
+.ctt{
+    display: flex;
+}
+.rawsize{
+    padding-left: 200px;
+    margin-bottom: 0;
+}
+.p1,.p2,.p3,.p6,.p7,.p8,.p9,.p10,.p11,.p12,.p13,.p14,.p15,.p16{
+    font-size: 10px;
+    padding-left: 10px;
+    margin-top: 0px;
+    cursor: pointer;
+}
+.p4{
+    font-size: 10px;
+    padding-right: 2px;
+    padding-left: 2px;
+    margin-top: 0px;
+    cursor: pointer;
+}
+.p5{
+    font-size: 10px;
+    padding-left: 17px;
+    margin-top: 0px;
+    cursor: pointer;
+}
+p{
+    font-family: "Roboto Mono", sans;
+}
+
+
+
+
+
+/*second page css*/
+.second-page-tops{
+    width: 100%;
+    height:  3477px;
+    
+
+}
+.inside-block1{
+    
+    width: 80%;
+    height: 3400px;
+
+    
+    position:relative;
+    top: 50px;
+    left: 150px;
+    right: 50px;
+    bottom: 50px;
+    
+}
+.f2view{
+    width: 100%;
+    height: 43px;
+    
+    position: relative;
+    
+}
+.r1c1,
+.r1c4{
+    width: 300px;
+}
+.r1c2,
+.r1c3{
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+}
+.fd1{
+    display:grid;
+    grid-template-columns: 305px 305px 305px 300px;
+}
+.r2c3{
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    position: relative;
+    left:2px
+}
+.r3c1,.r3c2,.r3c3{
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+}
+.r3c4{
+    width: 300px;
+    height: 450px;
+    object-fit: contain;
+}
+.view{
+    position: relative;
+    left: 560px;
+    border-radius: 7px;
+    width: 88px;
+    height: 33px;
+    background-color: black;
+    color: white;
+    font-family:  "Roboto Mono", sans;
+    transition: opacity .5s;
+    border: 0px;
+    cursor: pointer;
+}
+.view:hover,
+.view2:hover{
+    opacity: 0.7;
+
+}
+.fd2{
+    display:grid;
+    grid-template-columns: 305px 305px 305px 300px;
+}
+.h3::before,
+.h3::after{
+    
+    content:"";
+    flex:1;
+    border-bottom: 1px  solid rgb(169, 168, 168);
+}
+.h3{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-family:   "Roboto Mono", sans;
+}
+.new-drops{
+    margin-left: 20px;
+    margin-right: 19px;
+}
+/*2nd page ends here*/
+/*begin 3rd page*/
+.page-3hoodie{
+    width: 1519px;
+   
+}
+.fd3{
+    display: grid;
+    grid-template-columns: 305px 305px 305px 300px;
+    padding-left: 136px;
+}
+.view2{
+    position: relative;
+    left:  695px;
+    border-radius: 7px;
+    width: 88px;
+    height: 33px;
+    background-color: black;
+    color: white;
+    font-family:  "Roboto Mono", sans;
+    transition: opacity .5s;
+    border: 0px;
+    cursor: pointer;
+
+}
+.footerfull{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 715px;
+
+}
+.f-head{
+    width: 793px;
+    
+    height: 46px;
+    position: relative;
+    left: 198px;
+    font-size: 20px;
+    padding-left: 299px;
+    top: 30px;
+    font-family:"Roboto Mono", sans ;
+}
+
+.inputin{
+    width: 1193px;
+    height: 40px;
+    position: relative;
+    left: 155px;
+    top: 29px;
+    border: none;
+
+}
+.fbutton{
+    position: relative;
+    left: 1248px;
+    border: none;
+    background: none;
+    font-size: 11px;
+    top: -3px;
+}
+.arrow{
+    position: relative;
+    left: 1326px;
+    top: -18px;
+    font-size: 13px;
+    width: 20px;
+}
+.footer-list{
+    display: grid;
+        grid-template-columns: 270px 265px 270px 231px 205px 180px;
+        padding-left: 153px;
+
+}
+.media{
+    position: relative;
+    left: 150px;
+    top: -19px;
+    font-size: 21px;
+    width: 360px;
+}
+.ps{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    bottom: 0%;
+    right: 0%;
+    margin: 35px 25px;
+}
+
+ .WHATSAPP{
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    background-color: black;
+    color: #f2f2f2;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    line-height: 65px;
+    font-size: 35px;
+ }
+ #logo{
+    padding-left: 16px;
+    padding-top: 13px;
+ }
+.lowercase{
+    text-transform: lowercase;
+    font-size: 15px;
+    font-weight: 300;
+}
+.r1c1,.r1c2,.r1c3,.r1c4,.r2c3,.r3c1,.r3c2,.r3c3,.r3c4{
+    border: solid rgb(240 240 240) 1px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: opacity .6s;
+
+}
+.r1c1:hover{
+    opacity: .6;
+}
+.r1c2:hover{
+    opacity: .6 ;
+}
+.r1c3:hover{
+    opacity: .6 ;
+}
+.r1c4:hover{
+    opacity: .6 ;
+}
+.r2c3:hover{
+    opacity: .6 ;
+}
+.r3c1:hover{
+    opacity: .7 ;
+}
+.r3c2:hover{
+    opacity: .6 ;
+}
+.r3c3:hover{
+    opacity: .6 ;
+}
+.r3c4:hover{
+    opacity: .6 ;
+}
+.cart-all{
+    position: relative;
+    top: -445px;
+    left: 265px;
+    width: 10px;
+}
+.heart-all{
+    position: relative;
+    top: -436px;
+    left: 267px;
+    width: 10px;
+}
+.finaldiv{
+    width: 100%;
+    
+    height: 38px;
+}
+.final-text{
+    font-size: 10px;
+    text-align: center;
+    padding-top: 13px;
+}
+#page3-pad{
+    padding-top: 224px;
+}

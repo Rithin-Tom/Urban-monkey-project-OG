@@ -1,0 +1,40 @@
+(function () {
+  // Check for exact cart path match
+  if (window.location.pathname !== '/cart') return;
+    
+  console.log('BYOB: checking cart');
+
+  fetch('/cart.js')
+    .then(response => response.json())
+    .then(data => {
+        if (data.items.some(item => item.image == null && item.price == 0 && item.title == null)) {
+            setTimeout(function(){ location.reload(); }, 2000);
+            return;
+        }
+
+        if (typeof byob_skip_clean_cart !== 'undefined' && byob_skip_clean_cart === true) {
+          console.log("skip BYOB clean cart")
+          return
+        }
+        let has_bundle_item = data.items.some(item => item.vendor == 'BYOB' || item.product_type == 'BYOB')
+        if (has_bundle_item && !window.location.host.startsWith("woodturner")) {
+            // Direct implementation without function wrapper
+            let cart_form = document.querySelector("form[action='/cart']")
+            let elements = cart_form.getElementsByTagName('*');
+            let deleteElements = [];
+            for (el of elements) {
+                if (el.hasChildNodes && el.firstChild instanceof Text)
+                {
+                    let byob_option1_value_match = el.firstChild.textContent.match(/Bundle[\d]+_[\d]+\-[\d]{2}\-[\d]{2}[T][\d]{2}\:[\d]{2}\:[\d]{3}/g);
+                    if (byob_option1_value_match && el.tagName != 'SCRIPT')
+                        deleteElements.push(el)
+                    let byob_option1_name_match = el.firstChild.textContent.match(/Name\:/g);
+                    if (byob_option1_name_match && el.tagName != 'SCRIPT')
+                        deleteElements.push(el)
+                }
+            }
+            for (el of deleteElements)
+                el.remove()
+        }
+    });
+})();

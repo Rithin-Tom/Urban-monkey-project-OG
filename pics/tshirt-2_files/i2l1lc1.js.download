@@ -1,0 +1,13 @@
+try { 
+	webengage.survey.onComplete(function (data) {
+  if (data.surveyId === "7djkbda") {  
+    window.location.href='https://www.urbanmonkey.com/collections/legacy-systmns-winter-2023';
+  }
+});
+ } catch(e) { 
+ 	if (e instanceof Error) { 
+		var data = e.stack || e.description;
+		data = (data.length > 900 ? data.substring(0, 900) : data);
+	 	webengage.eLog(null, 'error', data, 'cwc-error','cwc', 'i2l1lc1');
+	 }
+ }
